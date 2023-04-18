@@ -60,6 +60,17 @@ const set = useSet([1, 2, 3])
 set.delete(1, 2) // Set [3]
 ```
 
+### `set.has(value)`
+
+Check whether a value exists in Set.
+
+```js
+const set = useSet([1, 2, 3])
+
+set.has(1) // true
+set.has(4) // false
+```
+
 ### `set.toggle(value)`
 
 > Calling this method triggers a re-render.

@@ -46,6 +46,7 @@ export function useSet<T>(iterable?: Iterable<T>) {
   return useMemo(() => {
     return {
       size: set.size,
+      has: (value: T) => set.has(value),
       add,
       delete: deleteValues,
       clear,

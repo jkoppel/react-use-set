@@ -34,6 +34,13 @@ test("Remove values from Set with .delete(...values)", () => {
   expect(result.current.toArray()).toEqual([4])
 })
 
+test("Check if value exists in Set with .has(value)", () => {
+  const { result } = renderHook(() => useSet([1, 2, 3]))
+
+  expect(result.current.has(1)).toEqual(true)
+  expect(result.current.has(4)).toEqual(false)
+})
+
 test("Add non-existing value and delete existing value with .toggle(value)", () => {
   const { result } = renderHook(() => useSet())
 
