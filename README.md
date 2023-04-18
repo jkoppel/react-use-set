@@ -2,6 +2,11 @@
 
 Use [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)-like API with React hook.
 
+![npm](https://img.shields.io/npm/v/react-use-set)
+![CI Status](https://github.com/SevenOutman/react-use-set/actions/workflows/ci.yml/badge.svg)
+[![codecov](https://codecov.io/gh/SevenOutman/react-use-set/branch/main/graph/badge.svg?token=G6ymLbwxPj)](https://codecov.io/gh/SevenOutman/react-use-set)
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+
 ## Instsall
 
 Install `react-use-set` npm package
