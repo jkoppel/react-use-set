@@ -5,33 +5,36 @@ export function useSet<T>(iterable?: Iterable<T>) {
 
   const add = useCallback((...values: T[]) => {
     setSet((prev) => {
+      const copy = new Set(prev)
       for (const value of values) {
-        prev.add(value)
+        copy.add(value)
       }
 
-      return new Set(prev)
+      return copy
     })
   }, [])
 
   const deleteValues = useCallback((...values: T[]) => {
     setSet((prev) => {
+      const copy = new Set(prev)
       for (const value of values) {
-        prev.delete(value)
+        copy.delete(value)
       }
 
-      return new Set(prev)
+      return copy
     })
   }, [])
 
   const toggle = useCallback((value: T) => {
     setSet((prev) => {
-      if (!prev.has(value)) {
-        prev.add(value)
+      const copy = new Set(prev)
+      if (!copy.has(value)) {
+        copy.add(value)
       } else {
-        prev.delete(value)
+        copy.delete(value)
       }
 
-      return new Set(prev)
+      return copy
     })
   }, [])
 
