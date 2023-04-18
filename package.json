@@ -1,7 +1,7 @@
 {
   "name": "react-use-set",
   "version": "0.0.0",
-  "description": "Use Set-like mutable API with React hook",
+  "description": "Use Set-like API with React hook",
   "bugs": {
     "url": "https://github.com/SevenOutman/react-use-set/issues"
   },
