@@ -20,8 +20,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm run build-fast -- --dts-resolve",
-    "build-fast": "tsup src/index.ts --format cjs,esm",
+    "build": "pnpm run build-fast",
+    "build-fast": "tsup src/index.ts --format cjs,esm --dts",
     "prepublishOnly": "pnpm run build",
     "test": "vitest run",
     "test:coverage": "vitest run --passWithNoTests --coverage"
